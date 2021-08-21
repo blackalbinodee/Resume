@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Dee'sResume</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous"
+      />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+        <script src="https://kit.fontawesome.com/c5d883066e.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+        <script src="/main.js"></script>
+
+    </head>
+    <body>
+        <div class="resume">
+            <div class="resume_left">
+                <div class="resume_profile">
+                    <img src="profilePic.jpg" alt="profile_pic">
+                </div>
+                <div class="resume_content">
+                    <div class="resume_item resume_info">
+                       <div class="title">
+                           <p class="bold">Dumebi Ofili</p>
+                           <p class="regular">Backend Developer</p>
+                       </div>
+                       <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-map-signs"></i>
+                            </div>
+                            <div class="data">
+                                Plot 189 DDPA, Asaba </br> Nigeria
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="data">
+                               +2349021946873
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="data">
+                                blackalbinodee@gmail.com
+                            </div>
+                        </li>
+                       </ul>
+                    </div>
+                    <div class="resume_item resume_skills">
+                        <div class="title">
+                            <p class="bold">Skills</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="skill_name">
+                                    HTML
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    CSS
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    JS
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_name">
+                                    Python
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume_item resume_social">
+                        <div class="title">
+                            <p class="bold">Social</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-facebook-square"></i>
+                                </div>
+                                <div class="data">
+                                    <p class="semi_bold">
+                                        Facebook
+                                    </p>
+                                    <p>Dumebi Ofili@facebook</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-twitter-square"></i>
+                                </div>
+                                <div class="data">
+                                    <p class="semi_bold">
+                                        Twitter
+                                    </p>
+                                    <p>Drdeedeeofili@twitter</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-instagram-square"></i>
+                                </div>
+                                <div class="data">
+                                    <p class="semi_bold">
+                                        Instagram
+                                    </p>
+                                    <p>deedee_ofili@instagram</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="data">
+                                    <p class="semi_bold">
+                                        Linkedin
+                                    </p>
+                                    <p>Dumebi Ofili@Linkedin</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact">
+                                    <h3>Email Us</h3>
+                                    <div class="alert">Your message has been sent</div>
+                                    <form id="contactForm">
+                                      <p>
+                                        <label>First Name</label>
+                                        <input type="text" name="fname" id="fname" required />
+                                      </p>
+                                      <p>
+                                        <label>Last Name</label>
+                                        <input type="text" name="lname" id="lname" />
+                                      </p>
+                                      <p>
+                                        <label>Email Address</label>
+                                        <input type="email" name="email" id="email" required />
+                                      </p>
+                                      <p>
+                                        <label>Phone Number</label>
+                                        <input type="text" name="phone" id="phone" required />
+                                      </p>
+                                      <p class="full">
+                                        <label>Message</label>
+                                        <textarea name="message" rows="5" id="message"></textarea>
+                                      </p>
+                                      <p class="full"><button type="submit">Submit</button></p>
+                                    </form>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume_right">
+                <div class="resume_item resume_about">
+                    <div class="title">
+                        <p class="bold">About Me</p>
+                    </div>
+                    <p>BackEnd Developer with the enthusiasm to learn. Also, final year medical student with an interest in Robotic Medicine, Machine Learning and Artificial Intelligence</p>
+                </div>
+                <div class="resume_item resume_work">
+                    <div class="title">
+                        <p class="bold">Work Experience</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date">2020-2021</div>
+                            <div class="info">
+                                <p class="semi-bold">
+                                        HNG Internship <br>
+                                        SCA Mentorship Programme <br>
+                                        Zuri Internship
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_education">
+                    <div class="title">
+                        <p class="bold">Education</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date">2004-2008</div>
+                            <div class="info">
+                                <p class="semi-bold">Primary Education</p>
+                                <p>Redeemer's International School, Asaba. Nig</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">2008-2014</div>
+                            <div class="info">
+                                <p class="semi-bold">Secondary Education</p>
+                                <p>Graceville College, Asaba. Nig</p>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="date">2014-Present</div>
+                            <div class="info">
+                                <p class="semi-bold">Tertiary Education</p>
+                                <p>University of Uyo, Uyo. Nig</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_Hobby">
+                    <div class="title">
+                        <p class="bold">Hobby</p>
+                    </div>
+                    <ul>
+                        <li>><i class="fas fa-book"></i></li>
+                        <li>><i class="fas fa-pen-fancy"></i></li>      
+                        <li>><i class="fas fa-code"></i></li>
+                        <li>><i class="fas fa-music"></i></li>
+                    </ul>              
+                </div>
+            </div> 
+    </div>
+    
+        </div>
+      </div>
+     
+    </body>
+</html>
