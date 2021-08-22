@@ -40,6 +40,16 @@ body{
     padding: 1em;
   }
   
+  .logo img{
+    display: inline;
+    position: relative;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
   .container {
     max-width: 1170px;
     margin-left: auto;
